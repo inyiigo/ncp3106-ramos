@@ -1,0 +1,15 @@
+.text-block {
+  margin: 2rem 1.5rem;
+  max-width: 800px;
+  font-family: monospace;
+  font-size: clamp(14px, 2.8vw, 22px);
+  color: #fff;
+}
+
+.char {
+  will-change: transform;
+  display: inline-block;
+}
+
+
+
