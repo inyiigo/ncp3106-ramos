@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Aspiring Computer Engineer</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-code-slash me-2"></i>Portfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#seminars">Seminars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center min-vh-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="display-4 fw-bold text-white mb-3">Hello, I am Franco Ramos</h1>
+                        <h2 class="h3 text-light mb-4">Aspiring Computer Engineer</h2>
+                        <p class="lead text-light mb-4">
+                            Passionate about technology and innovation. I love creating solutions that make a difference.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-warning btn-lg me-3">View My Work</a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">Get In Touch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="profile-image-container" style="position: relative; min-height: 80vh;">
+                        <img src="assets/me/me1.png" 
+                            alt="Profile Picture" 
+                            class="img-fluid" style="position: absolute; bottom: 0; left: 0; max-height: 80vh; width: auto; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                                                <!-- Tabbed Interface for Who Am I and Hobbies -->
+                                                <ul class="nav nav-tabs mb-3" id="aboutTab" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link active" id="whoami-tab" data-bs-toggle="tab" data-bs-target="#whoami" type="button" role="tab" aria-controls="whoami" aria-selected="true">Who Am I</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="hobbies-tab" data-bs-toggle="tab" data-bs-target="#hobbies" type="button" role="tab" aria-controls="hobbies" aria-selected="false">Hobbies</button>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content" id="aboutTabContent">
+                                                    <div class="tab-pane fade show active" id="whoami" role="tabpanel" aria-labelledby="whoami-tab">
+                                                        <p class="lead mb-4">
+                                                            I am a passionate and dedicated student pursuing Computer Engineering. My journey in technology began with curiosity and has evolved into a deep passion for problem-solving and innovation. I believe in continuous learning and staying updated with the latest technologies. My goal is to contribute to meaningful projects that can make a positive impact on society.
+                                                        </p>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="hobbies" role="tabpanel" aria-labelledby="hobbies-tab">
+                                                        <ul class="list-unstyled mb-4" id="hobbiesDesc">
+                                                              <li class="mb-2"><i class="bi bi-activity me-2 text-primary"></i>Running</li>
+                                                            <li class="mb-2"><i class="bi bi-activity me-2 text-primary"></i>Working out</li>
+                                                            <li class="mb-2"><i class="bi bi-cup-hot me-2 text-primary"></i>Coffee with Friends</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                                        <div class="about-image text-center" style="position: relative; min-height: 320px;">
+                                                <img id="aboutMainImage" src="assets/me/me2.png" 
+                                                         alt="About Me" 
+                                                         class="img-fluid slide-right" style="position: absolute; bottom: -20px; left: 40px; max-width: 720px; width: 100%; height: auto;">
+                                                <div id="hobbiesCarouselWrapper" style="display:none; position: absolute; bottom: 0; left: 0; width: 100%;">
+                                                    <div id="hobbiesCarousel" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button" data-bs-target="#hobbiesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                            <button type="button" data-bs-target="#hobbiesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                            <button type="button" data-bs-target="#hobbiesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                            <button type="button" data-bs-target="#hobbiesCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                            <button type="button" data-bs-target="#hobbiesCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                                        </div>
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="assets/hobbies/h1.png" class="d-block w-100" alt="Hobby 1" style="max-height:320px; object-fit:contain;">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="assets/hobbies/h2.png" class="d-block w-100" alt="Hobby 2" style="max-height:320px; object-fit:contain;">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="assets/hobbies/h3.png" class="d-block w-100" alt="Hobby 3" style="max-height:320px; object-fit:contain;">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="assets/hobbies/h4.png" class="d-block w-100" alt="Hobby 4" style="max-height:320px; object-fit:contain;">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="assets/hobbies/h5.png" class="d-block w-100" alt="Hobby 5" style="max-height:320px; object-fit:contain;">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#hobbiesCarousel" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#hobbiesCarousel" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Educational Background</h2>
+                    <div class="title-underline"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="timeline">
+                        <div class="timeline-item" data-bs-toggle="modal" data-bs-target="#collegeModal">
+                            <div class="timeline-content edu-timeline-content">
+                                <div class="timeline-date">2023 - Present</div>
+                                <h2 class="college-title">College</h2>
+                                <h2 class="college-title-hover" style="display:none;">University<br>of the East</h2>
+                                <span>Hover here</span>
+                                <div class="pic edu-timeline-pic" style="background-image: url('assets/educational_bg/ue/e_ue.png')"></div>
+                                <button></button>
+                                    <p class="click-for-more">Click for More!</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-bs-toggle="modal" data-bs-target="#seniorHighModal">
+                            <div class="timeline-content edu-timeline-content">
+                                <div class="timeline-date">2021 - 2023</div>
+                                <h2 class="senior-title">Senior High School</h2>
+                                <h2 class="senior-title-hover" style="display:none;">Technological<br>Institute of the Philippines</h2>
+                                <span>Hover here</span>
+                                <div class="pic edu-timeline-pic" style="background-image: url('assets/educational_bg/tip/e_tip.png')"></div>
+                                <button></button>
+                                   <p class="click-for-more">Click for More!</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-bs-toggle="modal" data-bs-target="#highSchoolModal">
+                            <div class="timeline-content edu-timeline-content">
+                                <div class="timeline-date">2017 - 2021</div>
+                                <h2 class="highschool-title">Junior High School</h2>
+                                <h2 class="highschool-title-hover" style="display:none;">Ina ng Buhay<br>Catholic School</h2>
+                                <span>Hover here</span>
+                                <div class="pic edu-timeline-pic" style="background-image: url('assets/educational_bg/inbcs/e_inbcs.png')"></div>
+                                <button></button>
+                                   <p class="click-for-more">Click for More!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seminars and Trainings Section -->
+        <section id="seminars" class="seminars-section">
+            <div class="container">
+                <div class="section-title">Seminars and Trainings</div>
+                <div class="title-underline"></div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="seminar-card">
+                            <span class="seminar-icon"><i class="bi bi-lightning-charge-fill"></i></span>
+                            <div class="seminar-title">Circuit Crash: Exploring the Power of Arduino</div>
+                            <div class="seminar-desc">A hands-on workshop designed to introduce learners to the basics of Arduino—from understanding components to building simple, interactive projects.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="seminar-card">
+                            <span class="seminar-icon"><i class="bi bi-cpu"></i></span>
+                            <div class="seminar-title">CPE TechCon 2024: Going Beyond Revolutions</div>
+                            <div class="seminar-desc">A seminar that empowers future computer engineers with the skills, mindset, and innovation needed to drive technological advancements and create impact.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="seminar-card">
+                            <span class="seminar-icon"><i class="bi bi-git"></i></span>
+                            <div class="seminar-title">The Developer's Cookbook: Git & GitHub</div>
+                            <div class="seminar-desc">A practical workshop that equips developers with essential version control skills, from mastering Git commands to collaborating seamlessly on GitHub.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="seminar-card">
+                            <span class="seminar-icon"><i class="bi bi-robot"></i></span>
+                            <div class="seminar-title">Don't Just Code: Copilot Your Way to Success</div>
+                            <div class="seminar-desc">An explore-how seminar about how tools like GitHub Copilot can boost productivity, enhance code quality, and transform the way developers approach problem-solving.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="seminar-card">
+                            <span class="seminar-icon"><i class="bi bi-file-earmark-person"></i></span>
+                            <div class="seminar-title">Career Launchpad: Resume Writing for Emerging Computer Engineers</div>
+                            <div class="seminar-desc">A practical workshop focused on building impactful, industry-ready resumes that showcase skills, projects, and potential to employers.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="seminar-card">
+                            <span class="seminar-icon"><i class="bi bi-graph-up-arrow"></i></span>
+                            <div class="seminar-title">Beyond Limits: Cultivating Growth for Success and Confidence</div>
+                            <div class="seminar-desc">A motivational seminar designed to help individuals develop a growth mindset, build self-confidence, and unlock their potential.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="seminar-card">
+                            <span class="seminar-icon"><i class="bi bi-easel2"></i></span>
+                            <div class="seminar-title">Figma 101 Workshop</div>
+                            <div class="seminar-desc">A beginner-friendly session that introduces the fundamentals of Figma for designing, prototyping, and collaborating on user interfaces.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="seminar-card">
+                            <span class="seminar-icon"><i class="bi bi-emoji-dizzy"></i></span>
+                            <div class="seminar-title">Psychology of Gaming Addiction</div>
+                            <div class="seminar-desc">An insightful seminar that explores psychological factors behind gaming addiction, its impact, and strategies for healthy balance.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="seminar-card">
+                            <span class="seminar-icon"><i class="bi bi-shield-exclamation"></i></span>
+                            <div class="seminar-title">Anti Cyberbullying Seminar</div>
+                            <div class="seminar-desc">An educational seminar that raises awareness about the impact of cyberbullying and equips participants with strategies to address online harassment.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <div class="title-underline"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="skill-card text-center">
+                        <div class="skill-icon mb-3">
+                            <i class="bi bi-code-slash display-4 text-primary"></i>
+                        </div>
+                        <h5>Programming</h5>
+                        <div class="skill-images">
+                            <img src="./assets/skills/java.png" alt="Java" class="skill-img" data-bs-toggle="tooltip" data-bs-placement="top" title="Java" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                            <img src="assets/skills/pyth.png" alt="Python" class="skill-img" data-bs-toggle="tooltip" data-bs-placement="top" title="Python" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                            <img src="assets/skills/c_plus.png" alt="C++" class="skill-img" data-bs-toggle="tooltip" data-bs-placement="top" title="C++" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="skill-card text-center">
+                        <div class="skill-icon mb-3">
+                            <i class="bi bi-globe display-4 text-success"></i>
+                        </div>
+                        <h5>Web Development</h5>
+                        <div class="skill-images">
+                            <img src="./assets/skills/html.png" alt="HTML" class="skill-img" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                            <img src="./assets/skills/bootstrap.png" alt="Bootstrap" class="skill-img" data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                            <img src="./assets/skills/react.png" alt="React" class="skill-img" data-bs-toggle="tooltip" data-bs-placement="top" title="React" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                            <img src="./assets/skills/css.png" alt="CSS" class="skill-img" data-bs-toggle="tooltip" data-bs-placement="top" title="CSS" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                            <img src="./assets/skills/javascript.png" alt="JavaScript" class="skill-img" data-bs-toggle="tooltip" data-bs-placement="top" title="JavaScript" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="skill-card text-center">
+                        <div class="skill-icon mb-3">
+                            <i class="bi bi-database display-4 text-warning"></i>
+                        </div>
+                        <h5>Databases</h5>
+                        <div class="skill-images">
+                            <img src="assets/skills/sql.png" alt="SQL" class="skill-img" data-bs-toggle="tooltip" data-bs-placement="top" title="SQL" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="skill-card text-center">
+                        <div class="skill-icon mb-3">
+                            <i class="bi bi-tools display-4 text-info"></i>
+                        </div>
+                        <h5>Tools</h5>
+                        <div class="skill-images">
+                            <img src="assets/skills/git.png" alt="Git" class="skill-img" data-bs-toggle="tooltip" data-bs-placement="top" title="Git" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                            <img src="assets/skills/vs_code.png" alt="VS Code" class="skill-img" data-bs-toggle="tooltip" data-bs-placement="top" title="VS Code" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                            <img src="assets/skills/g_colab.png" alt="Google Colab" class="skill-img" data-bs-toggle="tooltip" data-bs-placement="top" title="Google Colab" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+                    <div class="card project-card project-blur-hover">
+                        <div class="project-thumb-blur-container">
+                            <img src="./assets/who_am_i/who_thumbnail.png" class="card-img-top project-thumb-img" alt="Getting to Know me App Thumbnail">
+                            <div class="project-blur-overlay">
+                                <div class="project-blur-desc">
+                                    <h4 class="mb-2">Getting to<br>Know me App</h4>
+                                    <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#project1Modal">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <!-- Removed title as requested -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+                    <div class="card project-card project-blur-hover">
+                        <div class="project-thumb-blur-container">
+                            <img src="./assets/guessing_g/guessing_thumbnail.png" class="card-img-top project-thumb-img" alt="Guessing Game Thumbnail">
+                            <div class="project-blur-overlay">
+                                <div class="project-blur-desc">
+                                    <h4 class="mb-2">Guessing Game</h4>
+                                    <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#project2Modal">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <!-- Removed title as requested -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+                    <div class="card project-card project-blur-hover">
+                        <div class="project-thumb-blur-container">
+                            <img src="./assets/arcade/arcade_thumbnail.png" class="card-img-top project-thumb-img" alt="Arcade App Thumbnail">
+                            <div class="project-blur-overlay">
+                                <div class="project-blur-desc">
+                                    <h4 class="mb-2">Arcade App</h4>
+                                    <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#project3Modal">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <!-- Removed title as requested -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <!-- Project 1 Modal: Getting to Know me App -->
+<div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project1ModalLabel">Getting to Know me App</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+                <div class="carousel-margin-wrapper">
+                    <div id="project1Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <video class="d-block w-100" controls style="max-height:340px; background:#000; border-radius:12px;" preload="metadata">
+                                                    <source src="./assets/who_am_i/Video_1.mp4" type="video/mp4">
+                                                    Your browser does not support the video tag.
+                                                </video>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./assets/who_am_i/who1.png" class="d-block w-100" alt="Slide 2">
+                                            </div>
+                                            <!-- Add more carousel-item divs as needed for more images -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#project1Carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#project1Carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+        <!-- Project Overview and Technologies Used for Getting to Know me App -->
+                <div class="mt-4 project-modal-content-text">
+                    <h4 class="fw-bold mb-3">PROJECT OVERVIEW</h4>
+                    <p>The Getting to Know Me App is a simple and interactive application that introduces who I am and what I enjoy doing. It includes sections about my personal background and my hobbies, giving users a glimpse of both my personality and interests. The goal of the app is to provide a fun and straightforward way for others to get to know me better.</p>
+                    <h5 class="fw-bold mt-4 mb-2">TECHNOLOGIES USED</h5>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <span class="badge rounded-pill bg-primary px-4 py-2" style="font-size:1rem;">Java</span>
+                        <span class="badge rounded-pill bg-success px-4 py-2" style="font-size:1rem;">CSS</span>
+                        <span class="badge rounded-pill bg-warning text-dark px-4 py-2" style="font-size:1rem;">Kotlin</span>
+                    </div>
+                </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project 2 Modal: Guessing Game -->
+<div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project2ModalLabel">Guessing Game</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+                <div class="carousel-margin-wrapper">
+                    <div id="project2Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./assets/guessing_g/guessing_g1.png" class="d-block w-100" alt="Guessing Game Slide 1">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./assets/guessing_g/guessing_g2.png" class="d-block w-100" alt="Guessing Game Slide 2">
+                                            </div>
+                                            <!-- Add more carousel-item divs as needed for more images -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#project2Carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#project2Carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+        <!-- Project Overview and Technologies Used for Guessing Game -->
+                <div class="mt-4 project-modal-content-text">
+                    <h4 class="fw-bold mb-3">PROJECT OVERVIEW</h4>
+                    <p>The Guessing Game is a fun and interactive application where users try to guess a randomly generated number within a certain range. The app provides feedback on each guess, helping users narrow down the possibilities. It's a great way to practice logical thinking and have some fun!</p>
+                    <h5 class="fw-bold mt-4 mb-2">TECHNOLOGIES USED</h5>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <span class="badge rounded-pill bg-primary px-4 py-2" style="font-size:1rem;">Python</span>
+                        <span class="badge rounded-pill bg-success px-4 py-2" style="font-size:1rem;">Game logic</span>
+                    </div>
+                </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project 3 Modal: Arcade App -->
+<div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="project3ModalLabel">Arcade App</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+                <div class="carousel-margin-wrapper">
+                    <div id="project3Carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <video class="d-block w-100" controls style="max-height:340px; background:#000; border-radius:12px;" preload="metadata">
+                                                    <source src="./assets/arcade/Video_2.mp4" type="video/mp4">
+                                                    Your browser does not support the video tag.
+                                                </video>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./assets/arcade/arcade1.png" class="d-block w-100" alt="Arcade App Slide 2">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./assets/arcade/arcade2.png" class="d-block w-100" alt="Arcade App Slide 3">
+                                            </div>
+                                            <!-- Add more carousel-item divs as needed for more images -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#project3Carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#project3Carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+        <!-- Project Overview and Technologies Used for Arcade App -->
+                <div class="mt-4 project-modal-content-text">
+                    <h4 class="fw-bold mb-3">PROJECT OVERVIEW</h4>
+                    <p>The Arcade App is a collection of classic arcade games brought together in a single application. Users can enjoy a variety of games, each with its own unique challenges and gameplay mechanics. The app is designed to provide entertainment and nostalgia for fans of retro gaming.</p>
+                    <h5 class="fw-bold mt-4 mb-2">TECHNOLOGIES USED</h5>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <span class="badge rounded-pill bg-primary px-4 py-2" style="font-size:1rem;">Python</span>
+                        <span class="badge rounded-pill bg-success px-4 py-2" style="font-size:1rem;">Game logic</span>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 get-in-touch-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-underline"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-info">
+                        <h4 class="mb-4">Contact Information</h4>
+                        <div class="contact-item d-flex align-items-center mb-3">
+                            <i class="bi bi-envelope-fill contact-icon me-3"></i>
+                            <span>ramos.francoinigo@ue.edu.ph</span>
+                        </div>
+                        <div class="contact-item d-flex align-items-center mb-3">
+                            <i class="bi bi-phone-fill contact-icon me-3"></i>
+                            <span>+63 (954) 267 5621</span>
+                        </div>
+                        <div class="contact-item d-flex align-items-center mb-3">
+                            <i class="bi bi-geo-alt-fill contact-icon me-3"></i>
+                            <span>Caloocan City, Philippines</span>
+                        </div>
+                        <div class="social-links mt-4">
+                            <a href="https://www.facebook.com/inyiigo" target="_blank" rel="noopener" class="me-2"><img src="assets/social_logo/fb.png" alt="Facebook" style="width:32px;height:32px;"></a>
+                            <a href="https://www.instagram.com/inyiigo/" target="_blank" rel="noopener" class="me-2"><img src="assets/social_logo/ig.png" alt="Instagram" style="width:32px;height:32px;"></a>
+                            <a href="#" class="me-2"><img src="assets/social_logo/mail.png" alt="Mail" style="width:32px;height:32px;"></a>
+                            <a href="https://www.tiktok.com/@inyiigoo" target="_blank" rel="noopener" class="me-2"><img src="assets/social_logo/tiktok.png" alt="TikTok" style="width:32px;height:32px;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" autocomplete="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" autocomplete="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject" autocomplete="off" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" autocomplete="off" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #ebe8df; color: #011223;" class="py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Franco Ramos. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- College Education Modal -->
+    <div class="modal fade" id="collegeModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bachelor of Science in Computer Engineering</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="collegeCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#collegeCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#collegeCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#collegeCarousel" data-bs-slide-to="2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="education-slide d-flex justify-content-center align-items-center" style="min-height:400px;">
+                                    <img src="./assets/educational_bg/ue/ue1.png" alt="University of the East Campus" class="img-fluid rounded shadow-lg mx-auto d-block" style="max-height: 400px; min-height: 200px; background-color: #f8f9fa; display: block !important; visibility: visible !important; opacity: 1 !important;" onerror="console.log('Failed to load ue1.png'); this.style.display='none'; this.nextElementSibling.style.display='block';" onload="console.log('Successfully loaded ue1.png')">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="education-slide d-flex justify-content-center align-items-center" style="min-height:400px;">
+                                    <img src="./assets/educational_bg/ue/ue2.png" alt="University of the East Facilities" class="img-fluid rounded shadow-lg mx-auto d-block" style="max-height: 400px; min-height: 200px; background-color: #f8f9fa; display: block !important; visibility: visible !important; opacity: 1 !important;" onerror="console.log('Failed to load ue2.png'); this.style.display='none'; this.nextElementSibling.style.display='block';" onload="console.log('Successfully loaded ue2.png')">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="education-slide d-flex justify-content-center align-items-center" style="min-height:400px;">
+                                    <img src="./assets/educational_bg/ue/ue3.png" alt="University of the East New Slide" class="img-fluid rounded shadow-lg mx-auto d-block" style="max-height: 400px; min-height: 200px; background-color: #f8f9fa; display: block !important; visibility: visible !important; opacity: 1 !important;">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#collegeCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#collegeCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Senior High School Modal -->
+    <div class="modal fade" id="seniorHighModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Senior High School (2021-2023)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="seniorHighCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#seniorHighCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#seniorHighCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#seniorHighCarousel" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#seniorHighCarousel" data-bs-slide-to="3"></button>
+                            <button type="button" data-bs-target="#seniorHighCarousel" data-bs-slide-to="4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="education-slide d-flex justify-content-center align-items-center" style="min-height:400px;">
+                                    <img src="./assets/educational_bg/tip/tip1.png" alt="T.I.P. Campus" class="img-fluid rounded shadow-lg mx-auto d-block" style="max-height: 400px; min-height: 200px; background-color: #f8f9fa; display: block !important; visibility: visible !important; opacity: 1 !important;" onerror="console.log('Failed to load tip1.png'); this.style.display='none'; this.nextElementSibling.style.display='block';" onload="console.log('Successfully loaded tip1.png')">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="education-slide d-flex justify-content-center align-items-center" style="min-height:400px;">
+                                    <img src="./assets/educational_bg/tip/tip2.png" alt="T.I.P. Facilities" class="img-fluid rounded shadow-lg mx-auto d-block" style="max-height: 400px; min-height: 200px; background-color: #f8f9fa; display: block !important; visibility: visible !important; opacity: 1 !important;" onerror="console.log('Failed to load tip2.png'); this.style.display='none'; this.nextElementSibling.style.display='block';" onload="console.log('Successfully loaded tip2.png')">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="education-slide d-flex justify-content-center align-items-center" style="min-height:400px;">
+                                    <img src="./assets/educational_bg/tip/tip3.png" alt="T.I.P. Activities" class="img-fluid rounded shadow-lg mx-auto d-block" style="max-height: 400px; min-height: 200px; background-color: #f8f9fa; display: block !important; visibility: visible !important; opacity: 1 !important;" onerror="console.log('Failed to load tip3.png'); this.style.display='none'; this.nextElementSibling.style.display='block';" onload="console.log('Successfully loaded tip3.png')">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="education-slide d-flex justify-content-center align-items-center" style="min-height:400px;">
+                                    <img src="./assets/educational_bg/tip/tip4.png" alt="T.I.P. Events" class="img-fluid rounded shadow-lg mx-auto d-block" style="max-height: 400px; min-height: 200px; background-color: #f8f9fa; display: block !important; visibility: visible !important; opacity: 1 !important;" onerror="console.log('Failed to load tip4.png'); this.style.display='none'; this.nextElementSibling.style.display='block';" onload="console.log('Successfully loaded tip4.png')">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="education-slide d-flex justify-content-center align-items-center" style="min-height:400px;">
+                                    <img src="./assets/educational_bg/tip/tip5.png" alt="T.I.P. New Slide" class="img-fluid rounded shadow-lg mx-auto d-block" style="max-height: 400px; min-height: 200px; background-color: #f8f9fa; display: block !important; visibility: visible !important; opacity: 1 !important;">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#seniorHighCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#seniorHighCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+
+                    <!-- Accordions for Awards -->
+                    <div class="accordion mt-4" id="seniorHighAwardsAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="grade12Heading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#grade12Collapse" aria-expanded="false" aria-controls="grade12Collapse">
+                                    <i class="bi bi-award me-2 text-warning"></i> Grade 12
+                                </button>
+                            </h2>
+                            <div id="grade12Collapse" class="accordion-collapse collapse" aria-labelledby="grade12Heading" data-bs-parent="#seniorHighAwardsAccordion">
+                                <div class="accordion-body">
+                                    <strong>AWARDS:</strong>
+                                    <ul class="mb-0">
+                                        <li><i class="bi bi-star-fill text-warning me-1"></i> With Honors</li>
+                                    </ul>
+                                    <hr>
+                                    <strong>MENTION:</strong>
+                                    <p class="mb-0 mt-2"><i class="bi bi-megaphone-fill text-info me-1"></i> I had the honor of serving as one of the ambassadors of the Technological Institute of the Philippines, representing the school with pride and dedication.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="grade11Heading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#grade11Collapse" aria-expanded="false" aria-controls="grade11Collapse">
+                                    <i class="bi bi-award me-2 text-warning"></i> Grade 11
+                                </button>
+                            </h2>
+                            <div id="grade11Collapse" class="accordion-collapse collapse" aria-labelledby="grade11Heading" data-bs-parent="#seniorHighAwardsAccordion">
+                                <div class="accordion-body">
+                                    <strong>AWARDS:</strong>
+                                    <ul class="mb-0">
+                                        <li><i class="bi bi-star-fill text-warning me-1"></i> With Honors</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- High School Modal -->
+    <div class="modal fade" id="highSchoolModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">High School (2017-2021)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="highSchoolCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#highSchoolCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#highSchoolCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#highSchoolCarousel" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#highSchoolCarousel" data-bs-slide-to="3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="education-slide d-flex justify-content-center align-items-center" style="min-height:400px;">
+                                    <img src="./assets/educational_bg/inbcs/inbcs1.png" alt="INBCS Campus" class="img-fluid rounded shadow-lg mx-auto d-block" style="max-height: 400px; min-height: 200px; background-color: #f8f9fa; display: block !important; visibility: visible !important; opacity: 1 !important;" onerror="console.log('Failed to load inbcs1.png'); this.style.display='none'; this.nextElementSibling.style.display='block';" onload="console.log('Successfully loaded inbcs1.png')">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="education-slide d-flex justify-content-center align-items-center" style="min-height:400px;">
+                                    <img src="./assets/educational_bg/inbcs/inbcs2.png" alt="INBCS Facilities" class="img-fluid rounded shadow-lg mx-auto d-block" style="max-height: 400px; min-height: 200px; background-color: #f8f9fa; display: block !important; visibility: visible !important; opacity: 1 !important;" onerror="console.log('Failed to load inbcs2.png'); this.style.display='none'; this.nextElementSibling.style.display='block';" onload="console.log('Successfully loaded inbcs2.png')">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="education-slide d-flex justify-content-center align-items-center" style="min-height:400px;">
+                                    <img src="./assets/educational_bg/inbcs/inbcs3.png" alt="INBCS Activities" class="img-fluid rounded shadow-lg mx-auto d-block" style="max-height: 400px; min-height: 200px; background-color: #f8f9fa; display: block !important; visibility: visible !important; opacity: 1 !important;" onerror="console.log('Failed to load inbcs3.png'); this.style.display='none'; this.nextElementSibling.style.display='block';" onload="console.log('Successfully loaded inbcs3.png')">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="education-slide d-flex justify-content-center align-items-center" style="min-height:400px;">
+                                    <img src="./assets/educational_bg/inbcs/inbcs4.png" alt="INBCS New Slide" class="img-fluid rounded shadow-lg mx-auto d-block" style="max-height: 400px; min-height: 200px; background-color: #f8f9fa; display: block !important; visibility: visible !important; opacity: 1 !important;">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#highSchoolCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#highSchoolCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+
+                    <!-- Accordions for Junior High School Awards -->
+                    <div class="accordion mt-4" id="juniorHighAwardsAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="grade10Heading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#grade10Collapse" aria-expanded="false" aria-controls="grade10Collapse">
+                                    <i class="bi bi-award me-2 text-primary"></i> Grade 10
+                                </button>
+                            </h2>
+                            <div id="grade10Collapse" class="accordion-collapse collapse" aria-labelledby="grade10Heading" data-bs-parent="#juniorHighAwardsAccordion">
+                                <div class="accordion-body">
+                                    <strong>AWARDS:</strong>
+                                    <ul class="mb-0">
+                                        <li><i class="bi bi-star-fill text-warning me-1"></i> With Honors</li>
+                                        <li><i class="bi bi-emoji-smile-fill text-success me-1"></i> Most Amiable</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="grade09Heading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#grade09Collapse" aria-expanded="false" aria-controls="grade09Collapse">
+                                    <i class="bi bi-award me-2 text-primary"></i> Grade 09
+                                </button>
+                            </h2>
+                            <div id="grade09Collapse" class="accordion-collapse collapse" aria-labelledby="grade09Heading" data-bs-parent="#juniorHighAwardsAccordion">
+                                <div class="accordion-body">
+                                    <strong>AWARDS:</strong>
+                                    <ul class="mb-0">
+                                        <li><i class="bi bi-star-fill text-warning me-1"></i> With Honors</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="grade08Heading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#grade08Collapse" aria-expanded="false" aria-controls="grade08Collapse">
+                                    <i class="bi bi-award me-2 text-primary"></i> Grade 08
+                                </button>
+                            </h2>
+                            <div id="grade08Collapse" class="accordion-collapse collapse" aria-labelledby="grade08Heading" data-bs-parent="#juniorHighAwardsAccordion">
+                                <div class="accordion-body">
+                                    <strong>AWARDS:</strong>
+                                    <ul class="mb-0">
+                                        <li><i class="bi bi-emoji-frown-fill text-secondary me-1"></i> None</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="grade07Heading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#grade07Collapse" aria-expanded="false" aria-controls="grade07Collapse">
+                                    <i class="bi bi-award me-2 text-primary"></i> Grade 07
+                                </button>
+                            </h2>
+                            <div id="grade07Collapse" class="accordion-collapse collapse" aria-labelledby="grade07Heading" data-bs-parent="#juniorHighAwardsAccordion">
+                                <div class="accordion-body">
+                                    <strong>AWARDS:</strong>
+                                    <ul class="mb-0">
+                                        <li><i class="bi bi-emoji-frown-fill text-secondary me-1"></i> None</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
